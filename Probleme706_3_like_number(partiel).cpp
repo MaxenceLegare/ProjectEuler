@@ -4,9 +4,9 @@
 #include <cstdlib>
 using namespace std;
 
+// Solution pour F(6), F(10^5) demande de la programmation dynamique.
 int main() {
   int conteur = 0, sp;
-
   std::vector<int> x = {};
 
   for (size_t k = 100000 ; k < 1000000; k++) {
