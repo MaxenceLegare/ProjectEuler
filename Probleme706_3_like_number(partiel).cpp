@@ -1,10 +1,8 @@
 #include <iostream>
-#include <string>
 #include <vector>
-#include <cstdlib>
 using namespace std;
 
-// Solution pour F(6), F(10^5) demande de la programmation dynamique.
+
 int main() {
   int conteur = 0, sp;
   std::vector<int> x = {};

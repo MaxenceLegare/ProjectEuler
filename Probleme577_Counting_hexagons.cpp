@@ -24,24 +24,24 @@ void serie_triangulaire_modifiee(int, int, int);
 void somme(int64_t);
 
 int main() {
-  for (size_t i = 3; i < n_cote; i++) {
-    if (i % 3 == 0) {
-      serie_triangulaire(i, n_cote);
+  for (size_t unite = 3; unite < n_cote; unite++) {
+    if (unite % 3 == 0) {
+      serie_triangulaire(unite, n_cote);
     }
   }
 
-  for (size_t i = 3; i < n_cote; i++) {
-    if (i % 3 == 0) {
-      cote_hexag = i/3 - 1;
-      serie_triangulaire_modifiee(i, n_cote, cote_hexag);
+  for (size_t unite = 3; unite < n_cote; unite++) {
+    if (unite % 3 == 0) {
+      cote_hexag = unite/3 - 1;
+      serie_triangulaire_modifiee(unite, n_cote, cote_hexag);
     }
   }
 }
 
 void serie_triangulaire(int n_courant, int n_cote){
   int64_t somme1 = 0, somme2 = 0;
-  for (size_t i = 3; i < (n_cote - n_courant + 3); i++) {
-    somme1 += 0.5 * (i-2) * ((i-2)+1);
+  for (size_t unite = 3; unite < (n_cote - n_courant + 3); unite++) {
+    somme1 += 0.5 * (unite-2) * ((unite-2)+1);
   }
 
   somme(somme1);
@@ -58,8 +58,8 @@ void serie_triangulaire(int n_courant, int n_cote){
 
 void serie_triangulaire_modifiee(int n_courant, int n_cote, int cote_hexag){
   int64_t somme1 = 0, somme2 = 0;
-  for (size_t i = 3; i < (n_cote - n_courant + 3); i++) {
-    somme1 += cote_hexag*(0.5 * (i-2) * ((i-2)+1));
+  for (size_t unite = 3; unite < (n_cote - n_courant + 3); unite++) {
+    somme1 += cote_hexag*(0.5 * (unite-2) * ((unite-2)+1));
   }
 
   somme(somme1);
