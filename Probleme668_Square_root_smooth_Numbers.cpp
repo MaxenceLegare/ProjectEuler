@@ -1,11 +1,10 @@
 #include <iostream>
 #include <cmath>
-#include <vector>
 using namespace std;
 
 typedef unsigned long long uint_type;
 
-uint_type N = pow(10, 5);
+uint_type N = pow(10, 2);
 uint_type facteur_premier(uint_type);
 
 int main() {
@@ -32,7 +31,7 @@ uint_type facteur_premier(uint_type nombre){
       }
       // Répétition d'un même facteur dans l'arbre de factorisation
       do {
-        nombre /= facteur;       
+        nombre /= facteur;
       }
       while (nombre % facteur == 0);
     }

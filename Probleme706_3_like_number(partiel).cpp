@@ -25,5 +25,6 @@ int main() {
   conteur = 0;
   }
  std::cout << "Pour F(6) = " << x.size() << '\n';
+ std::vector<int>().swap(x);
   return 0;
 }
